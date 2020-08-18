@@ -1,18 +1,4 @@
-/* Copyright 2019 Thomas Baart <thomas@splitkb.com>
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+
 #include QMK_KEYBOARD_H
 #include "rmw.h"
 #include "mitosis.h"
@@ -90,8 +76,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______,  _______  ,   _______, _______,                                
         _______, KC_TILD,  KC_EXLM  ,   _______, _______,                                
         _______, _______, TO(QWERTY),   _______, _______,  
-                        LCTL(KC_RIGHT), _______, _______, _______,    
-                            _______,    _______, _______, _______,    
+               LCTL(KC_RIGHT), _______, _______, _______,    
+                   _______,    _______, _______, _______,    
 
                 KC_CIRC,  KC_AMPR , KC_ASTR,  KC_GRV ,  _______,  
                 KC_EQUAL, KC_MINUS, KC_UNDS,  KC_PIPE, KC_COLON, 
@@ -101,11 +87,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ), 
     
     [JSYM] = LAYOUT_stack(
-        KC_GRV,  KC_AT  , KC_LCBR,     KC_RCBR,    _______,                      
-        KC_HASH, KC_DLR , KC_LPRN,     KC_RPRN,    KC_LEFT,                      
-        KC_PERC, KC_CIRC, KC_LBRACKET, KC_RBRACKET, _______, 
-                        _______, _______, _______, _______, 
-                        _______, _______, _______, _______, 
+        KC_GRV,  KC_AT  , KC_LCBR, KC_RCBR, _______,                      
+        KC_HASH, KC_DLR , KC_LPRN, KC_RPRN, KC_LEFT,                      
+        KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, _______, 
+                 _______, _______, _______, _______, 
+                 _______, _______, _______, _______, 
 
                 _______, _______, _______, _______,  _______,  
                 _______, _______, KC_QUES, KC_SLSH, KC_COLON, 
