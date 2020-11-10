@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
               _______, KC_4,   KC_5,   KC_6, KC_KP_PLUS, _______, 
     _______,  KC_COMM, KC_1,   KC_2,   KC_3, KC_KP_SLASH, _______, 
                        KC_0,   KC_DOT, KC_EQUAL, KC_KP_ASTERISK, KC_MS_BTN2,  
-    _______,  _______, KC_INSERT, TO(EDIT), _______, _______), 
+   _______,  _______, KC_INSERT, TO(EDIT), _______, _______), 
 
   [EDIT] = LAYOUT_ergodox(_______, _______, KC_MS_WH_UP, KC_MS_BTN1, KC_MS_BTN2, _______, _______, 
     _______, LGUI(LALT(KC_ESCAPE)), KC_MS_WH_DOWN, LALT(S(KC_LEFT)), LALT(S(KC_RIGHT)), _______, TO(NUMPAD), 
