@@ -10,7 +10,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TD(CTLALL),     OSL(ADJUST),    TD(GUCTL),  TD(SGCA),  TD(AGC), 
                                                                OS_CMD,    OS_CTL   , 
                                                                           KC_ESCAPE, 
-                                                   KC_BSPACE,  TD(SHENT), OSL(EDIT), 
+                                          LT(EDIT,KC_BSPACE),  TD(SHENT), OSL(EDIT), 
 
         KC_F5,       KC_6,             KC_7,       KC_8,    KC_9,             KC_0,          KC_BSPC, 
         TO(NUMPAD),   KC_Y,             KC_U,       KC_I,    KC_O,             KC_P,          KC_BSLS, 
@@ -19,7 +19,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TD(GCA),    TD(CTLALL),        KC_LBRC,    KC_RBRC, KC_MS_BTN1,
       OS_CALT,     KC_TAB, 
       KC_DEL, 
-      KC_CAPS,  SFTENT,  KC_SPC), 
+      KC_CAPS,  SFTENT,  LT(NUMPAD,KC_SPC)), 
 
 
   [MINIMAK4] = LAYOUT_ergodox(
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TO(EDIT), _______, KC_7,   KC_8,   KC_9, KC_KP_MINUS, _______, 
               _______, KC_4,   KC_5,   KC_6, KC_KP_PLUS, _______, 
     _______,  KC_COMM, KC_1,   KC_2,   KC_3, KC_KP_SLASH, _______, 
-                       KC_0,   KC_DOT, KC_EQUAL, KC_KP_ASTERISK, _______,  
+                       KC_0,   KC_DOT, KC_EQUAL, KC_KP_ASTERISK, KC_MS_BTN2,  
     _______,  _______, KC_INSERT, TO(EDIT), _______, _______), 
 
   [EDIT] = LAYOUT_ergodox(_______, _______, KC_MS_WH_UP, KC_MS_BTN1, KC_MS_BTN2, _______, _______, 
@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TO(QWERTY), LGUI(KC_T), KC_PGUP, KC_UP, KC_PGDOWN, KC_PSCREEN, _______, 
              LGUI(KC_LEFT), KC_LEFT, KC_DOWN, KC_RIGHT, LGUI(KC_RIGHT), _______, 
     _______, S(LGUI(KC_LEFT)), S(KC_LEFT), S(KC_DOWN), S(KC_RIGHT), S(LGUI(KC_RIGHT)), LCTL(KC_LEFT), 
-    _______, _______, FORM_GET, FORM_PUT, _______, 
+    _______, _______, FORM_GET, FORM_PUT, KC_MS_BTN3, 
     _______, _______, _______, S(KC_F10), _______, _______), 
 
   [FSYM] = LAYOUT_ergodox(_______, _______, _______, _______, _______, _______, _______, 

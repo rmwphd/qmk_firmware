@@ -22,12 +22,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB   , KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,                             
         OSL(EDIT), KC_A, LT(NUMPAD,KC_S), KC_D, LT(FSYM,KC_F), KC_G,                 
         TD(FRBK2)  , KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,  TO(EDIT), KC_ESCAPE,     
-                            TO(ADJUST), TD(SGCA), TD(AGC), KC_BSPACE, TD(SHNTC),  
+                            TO(ADJUST), TD(SGCA), TD(AGC), LT(EDIT,KC_BSPACE), TD(SHNTC),  
 
                                 KC_Y,    KC_U,       KC_I, KC_O,      KC_P,        KC_BSLS,
                                 KC_H, LT(JSYM,KC_J), KC_K, KC_L, LT(EDIT,KC_SCLN), KC_QUOT,
             KC_DEL, TO(NUMPAD),  KC_N, KC_M,     KC_COMM, KC_DOT, LT(MEDIA,KC_SLSH), KC_MS_BTN1,
-            SFTENT,  KC_SPC,   TD(GCA), TD(CTLALL), KC_CAPS
+            SFTENT,   LT(NUMPAD,KC_SPC),   TD(GCA), TD(CTLALL), KC_CAPS
     ),
 
     [MINIMAK4] = LAYOUT_stack(
@@ -43,9 +43,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [NUMPAD] = LAYOUT_stack(
-        _______, _______, _______,  _______, _______, _______,                      
-        _______, _______, _______,  _______, _______, _______,                       
-        _______, _______, _______,  _______, _______, _______, TO(QWERTY), _______, 
+        _______, KC_F9,  KC_F10, KC_F11, KC_F12, _______,                      
+        _______, KC_F5,  KC_F6,  KC_F7,  KC_F8,  _______,                       
+        _______, KC_F1,  KC_F2,  KC_F3,  KC_F4,  _______, TO(QWERTY), _______, 
                                     _______, _______, _______,  _______  , _______,    
                                                     
                                     _______, KC_7,     KC_8,    KC_9,  KC_KP_MINUS, _______,

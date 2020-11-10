@@ -1,0 +1,3 @@
+#define MACOSX
+#define UNICODE_SELECTED_MODES UC_MAC
+
