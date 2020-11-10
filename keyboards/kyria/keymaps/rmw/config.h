@@ -22,6 +22,8 @@
   #define OLED_DISPLAY_128X64
 #endif
 
+#define ONESHOT_TIMEOUT 900 // how long before oneshot times out
+
 #ifdef RGBLIGHT_ENABLE
   #define RGBLIGHT_ANIMATIONS
   #define RGBLIGHT_HUE_STEP 8
