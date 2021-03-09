@@ -1,0 +1,8 @@
+// bird.def
+// can I make this a non-standard keycode?
+PRES( FP04, 						TO(1)) 
+PRES( NUM | FP01 | FP11,            KC_4)
+SUBS( FP12 | FP13 | FP02 | FP03,    str_cat11,                "testing testing 1 2 3...")
+SUBS( FP01,                         str_cat12,                "https://tenor.com/Ain1.gif")
+
+

@@ -7,7 +7,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,         KC_Q,           KC_W,       KC_E,        KC_R,          KC_T,    TO(EDIT), 
     OSL(EDIT),      KC_A,  LT(NUMPAD,KC_S),      KC_D,  LT(FSYM,KC_F),   KC_G, 
     LCTL(KC_LEFT),  KC_Z,           KC_X,       KC_C,        KC_V,    SFT_T(KC_B),   KC_TAB, 
-    TD(CTLALL),     OSL(ADJUST),    TD(GUCTL),  TD(SGCA),  TD(AGC), 
+    KC_MS_BTN2,     OSL(ADJUST),    TD(GUCTL),  TD(SGCA),  TD(AGC), 
                                                                OS_CMD,    OS_CTL   , 
                                                                           KC_ESCAPE, 
                                           LT(EDIT,KC_BSPACE),  TD(SHENT), OSL(EDIT), 
@@ -16,7 +16,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TO(NUMPAD),   KC_Y,             KC_U,       KC_I,    KC_O,             KC_P,          KC_BSLS, 
                      KC_H,     LT(JSYM,KC_J),   KC_K,    KC_L,    LT(EDIT,KC_SCLN),       KC_QUOTE, 
         CTL_T(KC_B), KC_N,             KC_M,       KC_COMM, KC_DOT,  LT(MEDIA,KC_SLSH),    LCTL(KC_RIGHT), 
-        TD(GCA),    TD(CTLALL),        KC_LBRC,    KC_RBRC, KC_MS_BTN1,
+        TD(GCA),    TD(CTLALL),        G(S(KC_M)),    _______, KC_MS_BTN1,
       OS_CALT,     KC_TAB, 
       KC_DEL, 
       KC_CAPS,  SFTENT,  LT(NUMPAD,KC_SPC)), 
@@ -31,6 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                OS_CMD,    OS_CTL   , 
                                                                           KC_ESCAPE, 
                                                    KC_BSPACE,  TD(SHENT), OSL(EDIT), 
+                                                   
         KC_F5,       KC_6,             KC_7,       KC_8,    KC_9,             KC_0,          KC_BSPC, 
         TO(NUMPAD),   KC_Y,             KC_U,       KC_I,    KC_O,             KC_P,          KC_BSLS, 
                      KC_H,     LT(JSYM,KC_J),   KC_E,    KC_L,    LT(EDIT,KC_SCLN),       KC_QUOTE, 
@@ -60,6 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LCTL(KC_RIGHT), LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), LGUI(KC_V), LGUI(KC_Y), _______, 
     _______, _______, _______, _______, _______, 
     _______, _______, _______, _______, _______, TO(NUMPAD), 
+
     _______, _______, _______, S(KC_UP), _______, _______, KC_DELETE, 
     TO(QWERTY), LGUI(KC_T), KC_PGUP, KC_UP, KC_PGDOWN, KC_PSCREEN, _______, 
              LGUI(KC_LEFT), KC_LEFT, KC_DOWN, KC_RIGHT, LGUI(KC_RIGHT), _______, 
@@ -73,6 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LCTL(KC_RIGHT), _______, _______, _______, _______, _______, _______, 
     _______, _______, _______, _______, _______, 
     _______, _______, _______, DEL_WRD, _______, _______, 
+
     _______, _______, _______, _______, _______, _______, _______, 
     _______, KC_CIRC,  KC_AMPR , KC_ASTR, KC_GRV ,  _______, _______, 
              KC_EQUAL, KC_MINUS, KC_UNDS, KC_BSLS, KC_COLON, KC_DQT ,
@@ -86,10 +89,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, KC_PERC, KC_CIRC, KC_LBRACKET, KC_RBRACKET, _______, _______, 
     _______, _______, _______, _______, _______, 
     _______, _______, _______, _______, _______, _______, 
+
     _______, _______, _______, _______, _______, _______, _______, 
     _______, _______, _______, _______, _______, _______, _______, 
     _______, _______, KC_QUES, KC_SLSH, KC_COLON, _______, 
-    _______, _______, _______, _______, _______, _______, LCTL(KC_LEFT), 
+    _______, _______, _______, _______, _______, _______, DSKTP_L, 
     _______, _______, _______, _______, _______, 
     _______, _______, _______, _______, LGUI(KC_DOWN), _______), 
 
@@ -104,7 +108,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, _______, _______, _______, 
     _______, _______, KC_AUDIO_VOL_DOWN, KC_AUDIO_MUTE, KC_AUDIO_VOL_UP, _______, _______, 
     KC_MEDIA_REWIND, KC_MEDIA_FAST_FORWARD, _______, _______, _______, 
-    _______, _______, _______, _______, KC_MS_BTN1, KC_MEDIA_PLAY_PAUSE), 
+    _______, _______, _______, KC_MS_BTN2, KC_MS_BTN1, KC_MEDIA_PLAY_PAUSE), 
 
   [ADJUST] = LAYOUT_ergodox(_______, _______, _______, _______, _______, _______, _______, 
     _______, _______, _______, _______, _______, _______, _______, 

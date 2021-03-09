@@ -1,0 +1,39 @@
+#pragma once
+
+#define MACOSX
+
+#define ONESHOT_TIMEOUT 800 // how long before oneshot times out
+#define LONGPRESS_DELAY 180
+#define LAYER_TOGGLE_DELAY 350
+
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
+#undef LOCKING_SUPPORT_ENABLE
+#undef LOCKING_RESYNC_ENABLE
+
+#undef MOUSEKEY_DELAY
+#define MOUSEKEY_DELAY             20
+#undef MOUSEKEY_MAX_SPEED
+#define MOUSEKEY_MAX_SPEED         6
+#undef MOUSEKEY_TIME_TO_MAX
+#define MOUSEKEY_TIME_TO_MAX       154
+#undef MOUSEKEY_WHEEL_MAX_SPEED 
+#define MOUSEKEY_WHEEL_MAX_SPEED   10
+#undef MOUSEKEY_WHEEL_TIME_TO_MAX
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 254
+
+#undef TAPPING_TOGGLE
+#define TAPPING_TOGGLE  1
+#undef TAPPING_TERM
+#define TAPPING_TERM    300
+
+#ifndef PERMISSIVE_HOLD
+#define PERMISSIVE_HOLD
+#endif
+//#ifndef IGNORE_MOD_TAP_INTERRUPT
+//#define IGNORE_MOD_TAP_INTERRUPT 
+//#endif
+
+#undef DEBOUNCE
+#define DEBOUNCE    5
+

@@ -59,6 +59,8 @@ enum user_custom_keycodes_universal {
 	   ,SEL_END    = S(LGUI(KC_RIGHT))
 	   ,R_HOME     = LGUI(KC_LEFT)
 	   ,R_END      = LGUI(KC_RIGHT)
+	   ,DSKTP_L    = LCTL(KC_LEFT)
+	   ,DSKTP_R    = LCTL(KC_RIGHT)
 	   ,KEYMAP_SAFE_RANGE
 	};
 #endif
