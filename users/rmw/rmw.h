@@ -16,6 +16,7 @@
 enum user_layers {
     QWERTY = 0
    ,MINIMAK4
+   ,MINIMAK8
    ,NUMPAD 
    ,EDIT 
    ,FSYM 

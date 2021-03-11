@@ -21,12 +21,36 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [QWERTY] = LAYOUT_stacked(
     TD(FRBK2),     KC_Q,  KC_W,  KC_E,  KC_R,     KC_T,                               
     OSL(EDIT),     KC_A,  NUM_S, KC_D,  FLAYER,   KC_G,     TO(EDIT),              
-    DSKTP_L, KC_Z,  KC_X,  KC_C,  KC_V,     KC_B,     KC_TAB  , KC_ESCAPE,   
+    DSKTP_L, KC_Z,  KC_X,  KC_C,  KC_V,     KC_B,     KC_TAB  , MT(MOD_LGUI,KC_ESCAPE),   
                                         TD(SGCA), TD(AGC),  EDIT_BSP, TD(SHENT),
 
                           KC_Y,   KC_U,    KC_I,    KC_O,    KC_P,     KC_DEL,
              TO(NUMPAD),  KC_H,   JLAYER,  KC_K,    KC_L,    EDIT_SCL, KC_QUOTE,
     KC_CAPS, KC_B      ,  KC_N,   KC_M,    KC_COMM, KC_DOT,  MED_SLSH, DSKTP_R,
+    SFTENT,  NUM_SPC   , TD(GCA), TD(CTLALL)
+    ),
+
+[MINIMAK4] = LAYOUT_stacked(
+    TD(FRBK2),     KC_Q,  KC_W,  KC_D,  KC_R,     KC_K,                               
+    OSL(EDIT),     KC_A,  NUM_S, KC_T,  FLAYER,   KC_G,     TO(EDIT),              
+    DSKTP_L, KC_Z,  KC_X,  KC_C,  KC_V,     KC_B,     KC_TAB  , KC_ESCAPE,   
+                                        TD(SGCA), TD(AGC),  EDIT_BSP, TD(SHENT),
+
+                          KC_Y,   KC_U,    KC_I,    KC_O,    KC_P,     KC_DEL,
+             TO(NUMPAD),  KC_H,   JLAYER,  KC_E,    KC_L,    EDIT_SCL, KC_QUOTE,
+    KC_CAPS, KC_B      ,  KC_N,   KC_M,    KC_COMM, KC_DOT,  MED_SLSH, DSKTP_R,
+    SFTENT,  NUM_SPC   , TD(GCA), TD(CTLALL)
+    ),
+
+[MINIMAK8] = LAYOUT_stacked(
+    TD(FRBK2),     KC_Q,  KC_W,  KC_D,  KC_R,     KC_K,                               
+    OSL(EDIT),     KC_A,  NUM_S, KC_T,  FLAYER,   KC_G,     TO(EDIT),              
+    DSKTP_L, KC_Z,  KC_X,  KC_C,  KC_V,     KC_B,     KC_TAB  , KC_ESCAPE,   
+                                        TD(SGCA), TD(AGC),  EDIT_BSP, TD(SHENT),
+
+                          KC_Y,   KC_U,             KC_I,    KC_L,    KC_P,     KC_DEL,
+             TO(NUMPAD),  KC_H,   LT(JSYM, KC_N),   KC_E,    KC_O,    EDIT_SCL, KC_QUOTE,
+    KC_CAPS, KC_B      ,  KC_J,   KC_M,           KC_COMM, KC_DOT,  MED_SLSH, DSKTP_R,
     SFTENT,  NUM_SPC   , TD(GCA), TD(CTLALL)
     ),
 
@@ -67,10 +91,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
 [JSYM] = LAYOUT_gergo(
-    _______, KC_GRV,  KC_AT  , KC_LCBR,     KC_RCBR,    _______,                                            _______, _______, _______, _______, _______, TO(ADJUST),
-    _______, KC_HASH, KC_DLR , KC_LPRN,     KC_RPRN,    KC_LEFT, _______,                           _______, _______, _______, KC_QUES, KC_SLSH, KC_COLON, _______, 
-    _______, KC_PERC, KC_CIRC, KC_LBRACKET, KC_RBRACKET, _______, _______, _______,         _______, _______, _______, _______, _______, _______, _______, DSKTP_L, 
-                                        _______, _______, _______, _______,         _______, KC_TAB, _______, _______
+    _______, KC_GRV,  KC_AT  , KC_LCBR, KC_RCBR, _______,                                            _______, _______, _______, _______, _______, TO(ADJUST),
+    _______, KC_HASH, KC_DLR , KC_LPRN, KC_RPRN, KC_LEFT, _______,                           _______, _______, _______, KC_QUES, KC_SLSH, KC_COLON, _______, 
+    _______, KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, _______, _______, _______,         _______, _______, _______, _______, _______, _______, _______, DSKTP_L, 
+                                        _______, _______, _______, _______,         _______, _______, _______, _______
     ),
 [MEDIA] = LAYOUT_gergo(
     TO(ADJUST), KC_MS_WH_UP, KC_MS_WH_LEFT, KC_MS_UP, KC_MS_WH_RIGHT, _______,                                             _______, _______, _______, _______, _______, _______,
@@ -81,7 +105,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [ADJUST] = LAYOUT_gergo(
     KC_F1,    KC_F2,   KC_F3,   KC_F4,   KC_F5,  KC_F6,                                             KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11, KC_F12,
     TO(EDIT), TO(QWERTY), TO(NUMPAD), TO(JSYM), TO(FSYM), TO(MEDIA), _______,                           _______, _______, _______, _______, _______, _______, _______,
-    _______, _______, _______, _______, _______, _______, _______, _______,         _______, _______, _______, _______, _______, _______, _______, _______,
+    _______, DF(QWERTY), DF(MINIMAK4), DF(MINIMAK8), _______, _______, _______, _______,         _______, _______, _______, _______, _______, _______, _______, _______,
                                         _______, _______, _______, _______,         _______, _______, _______, _______
     )
 };
